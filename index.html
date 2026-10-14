@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Бухгалтерский тест: 30 вопросов и 6 практических заданий">
+<title>Бухгалтерский тест</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
+<link rel="alternate icon" type="image/x-icon" href="favicon.ico?v=1">
+<link rel="stylesheet" href="styles.css"><script defer src="exam-data.js"></script><script defer src="app.js"></script>
+</head><body><div class="shell">
+<header class="site-header"><a href="index.html" class="brand"><span class="brand-symbol" aria-hidden="true">▦</span><span class="brand-text">Бухгалтерский <b>тест</b></span></a><div class="header-actions"><button class="theme-btn" id="theme-toggle" type="button" aria-label="Переключить тему" title="Переключить тему">☾</button></div></header>
+<main>
+<section class="screen active" id="start-screen"><div class="card intro-card">
+<div class="eyebrow"><span class="tiny-dot"></span> Тренировочный тест</div><h1>Бухгалтерский тест</h1>
+<p class="subtitle">30 тестовых вопросов и 6 практических заданий. Все задания обязательны.</p>
+<div class="metrics"><div class="metric"><strong>30</strong><span>тестовых вопросов</span></div><div class="metric"><strong>6</strong><span>задач</span></div><div class="metric"><strong>100</strong><span>максимум баллов</span></div></div>
+<div class="notice"><span aria-hidden="true">ⓘ</span><span>Баллы за тесты и задания начисляются автоматически по ответам на проверяемые этапы. После каждого ответа сразу показываются правильный вариант и пояснение. Подтверждённый ответ изменить нельзя. Время не ограничено.</span></div>
+<button class="btn primary wide" id="start-btn" type="button">Начать тест →</button>
+<p class="footnote">Без регистрации и отправки результатов. В некоторых заданиях есть неоднозначные формулировки; соответствующие пояснения доступны при проверке.</p>
+</div></section>
+<section class="screen" id="exam-screen" aria-label="Прохождение теста">
+<div class="progress-top"><div><span class="overline" id="section-label"></span><h2 id="step-label"></h2></div><div class="elapsed">◷ <span id="timer">00:00</span></div></div>
+<div class="progress-track" role="progressbar" aria-label="Прогресс теста" aria-valuemin="0" aria-valuemax="36" aria-valuenow="0" id="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+<div class="card exam-card">
+<div class="question-heading"><span class="pill" id="item-type"></span><span class="muted" id="item-number"></span></div>
+<h2 class="exam-title" id="item-title"></h2><p id="item-condition" class="condition hidden"></p><div id="task-points" class="task-points hidden"></div>
+<div id="task-assumption" class="source-note hidden"></div><p id="multi-label" class="small-callout hidden">Выберите все подходящие ответы.</p>
+<div id="answer-options" class="answers"></div><button id="multi-submit" class="btn secondary multi-submit hidden" type="button" disabled>Проверить ответ</button><div id="test-feedback" class="hidden" aria-live="polite"></div><div id="task-stages" class="task-stages hidden"></div>
+<div id="completion-hint" class="completion-hint" aria-live="polite"></div>
+<div class="exam-bottom"><button type="button" class="btn ghost" id="quit-btn">Выйти</button><div class="next-actions"><button type="button" class="btn secondary" id="back-btn">← Назад</button><button type="button" class="btn primary" id="next-btn" disabled>Следующий вопрос →</button></div></div>
+</div></section>
+<section class="screen" id="results-screen"><div class="card results-card">
+<span class="overline">Автоматическая проверка</span><h1>Тест завершён</h1><p class="subtitle">Баллы начислены за ответы на 30 вопросов и все проверяемые этапы шести задач. Развёрнутые профессиональные суждения оценить полностью автоматически невозможно.</p>
+<div class="total-score"><span id="total-score">0</span><span class="total-denom"> / 100</span></div><p class="total-caption">Набрано баллов</p>
+<div class="result-grid"><div class="result-stat"><strong id="test-result">0 / 30</strong><span>Тестовые вопросы</span></div><div class="result-stat"><strong id="task-result">0 / 70</strong><span>Ситуационные задачи</span></div><div class="result-stat"><strong id="elapsed-result">00:00</strong><span>Затраченное время</span></div></div>
+<div class="result-buttons"><button class="btn primary" id="restart-btn">Пройти ещё раз</button><button class="btn secondary" id="review-btn" aria-expanded="false">Разобрать ответы и задания</button></div><div id="review-list" class="review-list hidden"></div>
+</div></section>
+</main>
+<div id="q17-overlay" class="notice-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="q17-notice-title" aria-describedby="q17-notice-text">
+ <div class="notice-dialog">
+  <div class="notice-icon" aria-hidden="true">ⓘ</div>
+  <h2 id="q17-notice-title">Уточнение к вопросу №17</h2>
+  <p id="q17-notice-text">В этом вопросе может быть более одного обоснованного ответа. Из-за неоднозначности формулировки тест принимает один или два корректных варианта. Ваш ответ уже проверен и зафиксирован.</p>
+  <button id="q17-notice-ok" class="btn primary wide" type="button">Понятно, продолжить</button>
+ </div>
+</div>
+<footer>Бухгалтерский тест · без регистрации и отправки результатов</footer>
+</div></body></html>
